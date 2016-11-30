@@ -57,6 +57,10 @@
 #### 第十章
 1. rect(...)只接受长度单位和auto，不接受百分数单位。
 2. visibility属性可以继承，要想将一个hidden元素的后代元素可见，必须显式地声明后代元素为visible。
-3. 
+
+#### 第十二章
+1. 如果`:before`或`:after`选择器的主体是块级元素，则display属性只接受值none、inline、block、和marker。其他值都处理为block；如果`:before`或`:after`选择器的主体是一个行内元素，属性display只能接受值none和inline，其他所有值都处理为inline。
+2. content可以插入属性值，例如可以把每个链接href属性值直接放在链接的后面
+	`a[href]:after { "[" attr(href) "]" }`
 
 
